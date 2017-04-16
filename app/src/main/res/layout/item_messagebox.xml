@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        app:roundAsCircle="true"/>
+
+    <TextView
+        android:id="@+id/tv_item_im_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/sdv_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/sdv_icon"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_item_im_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_im_username"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/sdv_icon"
+        android:gravity="right"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"/>
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_below="@id/tv_item_im_username"-->
+    <!--android:drawableRight="@drawable/ic_chevron_right_grey600_24dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="点击进入聊天"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_im_time"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_messageBox_alreadyRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已读"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/btn_messageBox_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同意"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_messageBox_refused"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拒绝"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_item_userid"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:visibility="gone"/>-->
+
+</RelativeLayout>

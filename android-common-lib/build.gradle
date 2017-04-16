@@ -1,0 +1,71 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 22
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+
+dependencies {
+
+    //compile 'com.android.support:support-v4:22.2.0'
+    //compile('com.android.support:appcompat-v7:19.+')
+    compile('com.android.support:appcompat-v7:22.2.0')
+//            {
+//                exclude group: 'com.android.support', module: 'support-v4'
+//            }
+    //compile 'com.android.support:recyclerview-v7:22.2.0'
+    //compile 'com.nineoldandroids:library:2.4.0'
+
+
+    compile 'com.loopj.android:android-async-http:1.4.7'
+    compile files('libs/android-smart-image-view-1.0.0.jar')
+    compile('com.alibaba:fastjson:1.2.6')
+            {
+                exclude group: 'com.google.android', module: 'support-v4'
+            }
+
+    compile('net.datafans:bga-refresh-layout-lib:1.0.0')
+            {
+                exclude group: 'com.android.support', module: 'support-v4'
+            }
+
+
+    compile 'net.datafans:trinea-android-common-lib:1.0.0'
+    compile('net.datafans:viewPagerIndicator_Library:1.0.4')
+//
+//                {
+//                    exclude group: 'net.datafans', module: 'androidsupportv4'
+//                }
+
+
+    compile 'in.srain.cube:cube-sdk:1.0.44@aar'
+    compile 'in.srain.cube:ultra-ptr:1.0.9'
+    compile 'in.srain.cube:clog:1.0.2'
+
+    compile 'com.jakewharton:butterknife:7.0.1'
+    //compile 'me.relex:circleindicator:1.1.4@aar'
+    //compile 'net.datafans:circleindicator:1.0.0'
+    compile 'de.greenrobot:eventbus:2.4.0'
+
+    compile 'com.jakewharton:disklrucache:2.0.2'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
+
+    compile 'cn.finalteam:galleryfinal:1.4.8.4'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
+}
+
+apply from: 'bintray-publish-github.gradle'

@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '25.0.0'
+    packagingOptions {
+        exclude 'META-INF/NOTICE.txt'// 这里是具体的冲突文件全路径
+    }
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile(project(':android-common-lib')) {
+        exclude group: 'com.google.android', module: 'support-v4'
+    }
+}
+
+apply from: 'bintray-publish-github.gradle'

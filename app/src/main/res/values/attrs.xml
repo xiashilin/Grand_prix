@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="expande" format="boolean"/>
+        <attr name="minLines" format="integer"/>
+    </declare-styleable>
+
+</resources>

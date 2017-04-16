@@ -1,0 +1,143 @@
+<resources>
+
+    <string name="app_name">来一场</string>
+    <!--  Layout   -->
+    <!-- activity_about  -->
+    <string name="ly_about_toolbar_title">关于</string>
+    <string name="ly_about_tv_function_introduction">功能介绍</string>
+    <string name="ly_about_tv_feedback">意见反馈</string>
+    <string name="ly_about_tv_revisions">历史版本</string>
+    <!-- activity_function_introduction  -->
+    <string name="account_registration">一、账号注册</string>
+    <string name="account_registration_text">\t\t\t\t1、用户在在使用本软件之前要注册一个“来一场”账号，请用户使用尚未与“来一场”账号绑定的手机号。</string>
+    <string name="account_registration_text2">\t\t\t\t2、“来一场”系基于地理位置的移动社交产品，如用户公开其地理位置信息，则会对定位造成一定的影响，尽请谅解。</string>
+    <string name="function_using">二、功能使用</string>
+    <string name="function_using_text">\t\t\t\t1、用户在登陆账号之后，可以进行及时通讯、添加好友、发布运动信息、发布留言等等。</string>
+    <string name="function_using_text2">\t\t\t\t2、发布约战信息是完全由用户自主决定的，用户可以根据情况自行限定人数、时间以及选取地点、运动类型等等，还可以根据个人的喜爱发布约战时的海报，使用起来更加得心应手。</string>
+    <string name="function_using_text3">\t\t\t\t3、当知道好友的账号时，可以直接进行好友的添加，在添加完成之后进行及时通讯，当好友发布留言时可以在好友圈进行评论。</string>
+    <string name="user_agreement">三、用户协议</string>
+    <string name="user_agreement_text">\t\t\t\t本软件仅仅作为运动辅助软件，用户不得利用软件制作、上传、复制、发送以下内容\n</string>
+    <string name="user_agreement_text2">危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的;\n损害国家荣誉和利益的；
+        \n煽动民族仇恨，扰乱社会秩序，破坏社会稳定的；
+        \n散布谣言，扰乱社会秩序，破坏社会稳定的；
+        \n散步淫秽、色情、赌博、暴力、凶杀、恐怖、或者教唆犯罪的；
+        \n侮辱或者诽谤他人，侵害他人合法权益的;
+        \n含有法律、行政法规禁止的其他内容的信息</string>
+    <!--  activity_main -->
+    <!--  activity_maincontent -->
+    <!-- activity_revisions -->
+    <!-- base_listview -->
+    <string name="no_data">暂无数据</string>
+    <string name="being_loaded">正在加载...</string>
+    <!-- choise_item-->
+    <string name="tv_position">位置</string>
+    <string name="school_name">南京市栖霞区南京工业职业技术学院</string>
+    <!-- content_flowlayout -->
+    <string name="tv_ball_game">球类:</string>
+    <string name="tv_indoor">室内：</string>
+    <string name="tv_outdoor">室外：</string>
+    <!-- conversation-->
+    <string name="tv_contacts">联系人</string>
+    <!--custom_bottom_progressbar  -->
+    <string name="tv_Load_more">加载更多</string>
+    <!-- dialog_changepassword-->
+    <string name="et_old_pwd">请输入原密码</string>
+    <string name="et_new_pwd">请输入新密码</string>
+    <!-- dialog_verifymobilephone -->
+    <string name="tv_phone_verification_code" translatable="false">请输入手机验证码</string>
+    <string name="btn_ok">确定</string>
+    <string name="btn_cancel">取消</string>
+    <!-- empty_view-->
+    <!--feedback-->
+    <string name="et_feedback_content">请输入您的反馈意见（字数500以内）</string>
+    <string name="btn_confirm_submission">确认提交</string>
+    <!-- item_listview-->
+    <string name="tv_click_to_enter_chat">点击进入聊天</string>
+    <!-- item_messagebox-->
+    <!--item_yibaoming-->
+    <!--layout_activityintroduce-->
+    <!--layout_addfriend-->
+    <string name="tv_add_friend">添加好友</string>
+    <string name="et_please_enter">请输入昵称/邮箱/手机</string>
+    <string name="btn_find_friends">查找好友</string>
+    <!--  layout_choise-->
+    <string name="tv_active_site">活动地点</string>
+    <string name="btn_search">搜索</string>
+    <!--layout_createevent-->
+    <string name="tv_create_activity">创建活动</string>
+    <string name="tv_release">发布</string>
+    <string name="et_activity_name">活动名称（4-25字）</string>
+    <string name="tv_upload_poster">上传海报</string>
+    <string name="tv_time_start">开始时间</string>
+    <string name="tv_time_end">结束时间</string>
+    <string name="tv_activity_site">活动地点</string>
+    <string name="tv_remind">提醒</string>
+    <string name="tv_activity_class">活动类别</string>
+    <string name="tv_activity_introduction">活动介绍</string>
+    <string name="tv_click_fill">点击填写</string>
+    <!--layout_detailedevent-->
+    <string name="tv_activity">活动</string>
+    <string name="btn_sign_up">报名</string>
+    <string name="tv_sponsor">主办方</string>
+    <string name="tv_already_registered">已报名</string>
+    <string name="text">5V5篮球赛,敢不敢来!?\n14:30在奥体中心门口集合,半小时热身,比赛开始.</string>
+    <!--layout_empty-->
+    <string name="tv_please_log_in">请登录后使用！</string>
+    <string name="btn_click_login">点击登录</string>
+    <!--layout_friendlist-->
+    <!--layout_im-->
+    <!--layout_index-->
+    <string name="tv_list_mode">列表模式</string>
+    <!-- layout_listview_with_emptyview-->
+    <string name="tv_no_news">暂无消息</string>
+    <!--layout_login-->
+    <string name="et_mail_phone">手机号</string>
+    <string name="et_password">密码</string>
+    <string name="cb_auto_login">自动登录</string>
+    <string name="cb_remember_password">记住密码</string>
+    <string name="btn_login">登录</string>
+    <string name="tv_no_account_number">没有账号</string>
+    <!--layout_messagebox-->
+    <string name="tv_message_list">消息列表</string>
+    <!--layout_nocomplete-->
+    <!--layout-register-->
+    <string name="et_user_name">用户名</string>
+    <string name="et_phone_num">手机号</string>
+    <string name="et_mail">Email</string>
+    <string name="btn_registered_account">注册账号</string>
+    <string name="tv_login_immediately">立即登录</string>
+    <!--layout_session-->
+    <string name="tv_no_friends">暂无好友,请添加好友</string>
+    <!--layout_usercenter-->
+    <string name="tv_me">我的</string>
+    <string name="tv_i_created_the_activity">我创建的活动</string>
+    <string name="tv_i_joined_the_activity">我加入的活动</string>
+    <string name="tv_app_about">关于软件</string>
+    <string name="btn_cancellation_login">注销登录</string>
+    <!--layout_userinfo-->
+    <string name="tv_userinfo">个人信息</string>
+    <string name="tv_login_mail">登录邮箱</string>
+    <string name="et_phone_numbers">手机号码</string>
+    <string name="et_login_password">登录密码</string>
+    <string name="tv_click_change">点击修改</string>
+    <!--layout_welcome-->
+    <!--layout_bottom-->
+    <string name="tv_home_page">首页</string>
+    <string name="tv_friend">好友</string>
+    <string name="tv_activity_circle">活动圈</string>
+    <string name="tv_personal_center">个人中心</string>
+    <!--mapviwe_activity-->
+    <string name="tv_map_mode">地图模式</string>
+    <!--photo_choose_dialog-->
+    <string name="btn_ago_30min">提前30分钟</string>
+    <string name="btn_ago_1h">提前1小时</string>
+    <string name="btn_ago_6h">提前6小时</string>
+    <string name="btn_ago_12h">提前12小时</string>
+    <string name="btn_ago_24h">提前24小时</string>
+    <!--recycler_view_adapter-->
+    <!--tag_item-->
+    <string name="tv_TAG_laber">TAG标签</string>
+    <string name="welcome_prompt">欢迎进入   \n  来一场App!</string>
+    <string name="software_version">版本号：</string>
+
+</resources>

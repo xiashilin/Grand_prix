@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="top"
+        android:background="@color/persian_green"
+        android:layoutMode="opticalBounds"
+        android:minHeight="?attr/actionBarSize"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <TextView
+            android:id="@+id/tv_index_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/tv_list_mode"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/iv_index_map"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_pin_drop_white_36dp"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+            android:id="@+id/ultimate_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F9FAFB"
+            app:recyclerviewClipToPadding="true"
+            app:recyclerviewEmptyView="@layout/empty_view"
+            app:recyclerviewPadding="2dp"
+            app:recyclerviewScrollbars="vertical"
+            />
+
+        <LinearLayout
+        android:id="@+id/ll_index_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+                style="@android:style/Widget.Holo.ProgressBar.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/being_loaded"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_add_white_48dp"
+        app:backgroundTint="@color/persian_green"
+        />
+
+    <!--<com.software.shell.fab.ActionButton-->
+    <!--android:id="@+id/action_button"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--app:button_color="@color/persian_green"-->
+    <!--app:image="@drawable/ic_add_white_48dp"-->
+    <!--app:shadow_color="#757575"-->
+    <!--app:shadow_radius="1.0dp"-->
+    <!--app:shadow_xOffset="0.5dp"-->
+    <!--app:shadow_yOffset="1.0dp"-->
+    <!--/>-->
+</RelativeLayout>
